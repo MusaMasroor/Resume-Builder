@@ -9,5 +9,9 @@ const connectToDatabase = async () => {
     throw error;
   }
 };
-connectToDatabase();
-module.exports = connectToDatabase;
+
+module.exports = new Promise((resolve, reject) => {
+  connectToDatabase()
+    .then(() => resolve())
+    .catch((error) => reject(error));
+});

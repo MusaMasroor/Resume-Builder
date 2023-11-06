@@ -23,9 +23,11 @@ app.get("*", function (_, res) {
     }
   );
 });
+
+const databaseConnectionPromise = require("./db/connection");
 const startServer = async () => {
   try {
-    require("./db/connection");
+    await databaseConnectionPromise;
     app.listen(port, () => {
       console.log(`listening for requests at port ${port}`);
     });
