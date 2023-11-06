@@ -14,12 +14,6 @@ app.use(require("./routes/auth"));
 // Serve static assets from the client/build directory
 app.use(express.static(path.join(__dirname, "./client/build")));
 
-// Serve CSS files with the correct MIME type
-// app.use("/static/css/*.css", function (req, res, next) {
-//   res.setHeader("Content-Type", "text/css");
-//   next();
-// });
-
 // Catch-all route for serving the index.html file
 app.get("*", function (_, res) {
   res.sendFile(
