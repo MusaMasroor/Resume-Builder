@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+
       <section className="bg-white dark:bg-gray-900">
         <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28 ">
           <div className="mr-auto place-self-center lg:col-span-7">
@@ -245,8 +246,8 @@ const Home = () => {
 
       {/* <!-- Start block --> */}
 
-      <section className="bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+      <section className=" dark:bg-gray-800">
+        <div className="max-w-screen-xl px-4 py-16 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
           {/* <!-- Row --> */}
           <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
             <div className="text-gray-500 sm:text-lg dark:text-gray-400">
@@ -467,8 +468,8 @@ const Home = () => {
 
       {/* <!-- Start block --> */}
 
-      <section className="bg-white dark:bg-gray-900">
-        <div className="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6">
+      <section className=" dark:bg-gray-900">
+        <div className="items-center max-w-screen-xl px-4 py-16 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6">
           <div className="col-span-2 mb-8">
             <p className="text-lg font-medium text-purple-600 dark:text-purple-500">
               A Respected Name in Resumes
@@ -564,8 +565,8 @@ const Home = () => {
 
       {/* <!-- Start block --> */}
 
-      <section className="bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+      <section className=" dark:bg-gray-800">
+        <div className="max-w-screen-xl px-4 py-16 mx-auto text-center lg:py-24 lg:px-6">
           <figure className="max-w-screen-md mx-auto">
             <svg
               className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
@@ -609,8 +610,8 @@ const Home = () => {
 
       {/* <!-- Start block --> */}
 
-      <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+      <section className=" dark:bg-gray-900">
+        <div className="max-w-screen-xl px-4 py-16 mx-auto lg:py-24 lg:px-6">
           <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               Engineered for Your Resume-Building Needs
@@ -981,8 +982,8 @@ const Home = () => {
 
       {/* <!-- Start block --> */}
 
-      <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
+      <section className=" dark:bg-gray-900">
+        <div className="max-w-screen-xl px-4 py-16 mx-auto lg:pb-24 lg:px-6 ">
           <h2 className="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl dark:text-white">
             Frequently asked questions
           </h2>
@@ -1093,8 +1094,8 @@ const Home = () => {
 
       {/* <!-- Start block --> */}
 
-      <section className="bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
+      <section className=" dark:bg-gray-800">
+        <div className="max-w-screen-xl px-4 py-16 mx-auto lg:py-16 lg:px-6">
           <div className="max-w-screen-sm mx-auto text-center">
             <h2 className="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
               Start your free trial today
@@ -1111,8 +1112,8 @@ const Home = () => {
 
       {/* <!-- End block --> */}
 
-      <footer className="bg-white dark:bg-gray-800">
-        <div className="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+      <footer className=" dark:bg-gray-800">
+        <div className="max-w-screen-xl p-4 py-16 mx-auto lg:py-16 md:p-8 lg:p-10">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
             <div>
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">

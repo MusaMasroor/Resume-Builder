@@ -8,7 +8,6 @@ import LanguagesReferences from "../src/components/LanguagesReferences";
 import Education from "../src/components/Education";
 import Experience from "../src/components/Experience";
 import Certificate from "../src/components/Certificate";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
@@ -26,7 +25,6 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/about" element={<About />} />
             <Route path="/template" element={<Template />} />
             <Route path="/personal-detail" element={<PersonalDetail />} />
             <Route path="/skills" element={<Skills />} />

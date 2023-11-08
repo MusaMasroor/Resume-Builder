@@ -153,7 +153,7 @@ export function ResumeProvider({ children }) {
           certificateName1: "Project Management",
           schooleName1: "Horizon Institute of Project Management",
           aboutDepartment1:
-            "Horizon Institute of Project Management is a globally recognized institution known for its excellence in project management education. It is accredited by the Project Management Institute (PMI) and is renowned for its rigorous and comprehensive PMP certification program. The school boasts a team of experienced instructors who are themselves PMP-certified professionals with years of practical experience in project management across various industries.",
+            "Horizon Institute of Project Management is a globally recognized institution known for its excellence in project management education. It is accredited by the Project Management Institute (PMI) and is renowned for its rigorous and comprehensive PMP certification program. The school boasts a team of experienced instructors who are themselves PMP-certified professionals with years of practical experience in project management across various industries.It is accredited by the Project Management Institute (PMI) and is renowned for its rigorous and comprehensive PMP certification program.",
           startDate7: " January 2017",
           endDate7: "December 2019",
 
