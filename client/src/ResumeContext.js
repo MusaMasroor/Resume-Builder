@@ -8,6 +8,7 @@ export function useResume() {
 
 export function ResumeProvider({ children }) {
   const [showNotification, setShowNotification] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   const closeNotificationHandler = () => {
     setShowNotification(false);
@@ -187,6 +188,8 @@ export function ResumeProvider({ children }) {
         setShowAuth,
         setShowPdfPreview,
         showPdfPreview,
+        isLoading,
+        setIsLoading,
       }}
     >
       {children}

@@ -25,13 +25,13 @@ const Template = () => {
       } else if (res.status === 401) {
         const errorData = await res.json();
         setShowAuth(true);
-        navigate("/");
+        navigate("/login");
         window.alert(errorData.message);
       }
     } catch (error) {
       console.log(error);
       setShowAuth(true);
-      navigate("/");
+      navigate("/template");
     }
   };
 
