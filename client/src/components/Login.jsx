@@ -2,10 +2,10 @@ import React from "react";
 import Logo from "./Logo.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import { useResume } from "../ResumeContext";
-
+import Notification from "./Notification.jsx";
 const Login = () => {
   const navigate = useNavigate();
-  const { resumeContent, setResumeContent } = useResume();
+  const { resumeContent, setResumeContent, showNotification } = useResume();
   const handleResumeInputs = (e) => {
     const { name, value } = e.target;
     setResumeContent({ ...resumeContent, [name]: value });
@@ -38,6 +38,13 @@ const Login = () => {
   };
   return (
     <div>
+      {showNotification && (
+        <Notification
+          title="Important Message !"
+          message="You can login with the default user or create your own account!"
+          buttonText="OK"
+        />
+      )}
       <section className=" dark:bg-gray-900 min-h-screen">
         <div className=" flex relative top-3 right-2 items-center justify-center">
           <Logo />

@@ -14,7 +14,14 @@ const PersonalDetail = () => {
 
   return (
     <div>
-      {showNotification && <Notification />}
+      {showNotification && (
+        <Notification
+          title="Important Message !"
+          message="You can edit the input field information as per your requirement or click below to see the final result."
+          buttonText="See Results"
+          buttonLink="/resume-preview"
+        />
+      )}
       <section className="dark:bg-gray-900 py-8 min-h-screen flex justify-center items-center">
         <div className=" px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">

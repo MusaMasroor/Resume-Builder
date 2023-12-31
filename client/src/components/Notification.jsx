@@ -1,7 +1,8 @@
 import React from "react";
 import { useResume } from "../ResumeContext";
 import { Link } from "react-router-dom";
-const Notification = () => {
+
+const Notification = ({ title, message, buttonText, buttonLink }) => {
   const { closeNotificationHandler } = useResume();
 
   return (
@@ -16,19 +17,19 @@ const Notification = () => {
             X
           </button>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white animate-bounce">
-            Important Message !
+            {title}
           </h5>
           <p className="font-semibold text-gray-700 dark:text-gray-400">
-            You can edit the input field information as per your requirement or
-            click below to see the final result.
+            {message}
           </p>
 
-          <Link to="/resume-preview">
+          <Link to={buttonLink}>
             <button
               type="submit"
               className="py-3 px-5 my-3 text-sm font-bold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              onClick={closeNotificationHandler}
             >
-              See Results !
+              {buttonText}
             </button>
           </Link>
         </div>
