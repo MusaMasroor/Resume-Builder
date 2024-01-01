@@ -1,7 +1,9 @@
 [build]
-  base = "/"
-  publish = "client/build"
-  functions = "functions"
+  base = "server"  # Set the base directory to your server directory
+  command = "npm run build"  # Adjust the build command based on your server setup
+  publish = "server/client/build"  # Adjust the publish directory based on your project structure
+  functions = "server/functions"  # Adjust the functions directory based on your project structure
+
 
 [[redirects]]
   force = true
